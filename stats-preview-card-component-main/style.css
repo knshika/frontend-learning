@@ -1,0 +1,135 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  color: white;
+  background-color: hsl(234deg 32% 18%);
+  width: 78%;
+  padding: 4px 0px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+
+  /* all
+  // vertical horizontal
+  // top right bottom left */
+}
+.attribution a {
+  color: white;
+}
+
+body {
+  background-color: hsl(233, 47%, 7%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: hsl(244, 38%, 16%);
+  width: 80%;
+  border-radius: 6px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+}
+
+.card-image {
+  flex: 1;
+  position: relative;
+  min-height: 350px;
+  width: 50%;
+}
+
+.card-image > img {
+  object-fit: cover;
+  object-position: center;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  height: 100%;
+  width: 100%;
+}
+
+.card-image:after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background: hsl(277, 64%, 61%);
+  z-index: 10;
+  opacity: 0.5;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+h1 > span {
+  color: hsl(277, 64%, 61%);
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.card-stats {
+  display: flex;
+  margin-top: 50px;
+}
+
+.card-stat {
+  flex: 1;
+}
+
+.card-stat > span {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+@media only screen and (max-width: 375px) {
+  .card {
+    flex-direction: column-reverse;
+    margin-top: 40px;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .card-image {
+    width: 100%;
+  }
+  .card-image > img {
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 8px;
+  }
+
+  .card-image:after {
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 8px;
+  }
+
+  .card-stats {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .card-stat {
+    margin: 10px 0;
+  }
+}
