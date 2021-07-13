@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* body {
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.App input {
+  margin: 10px;
+  font-size: 15px;
+  padding: 2px;
+}
+
+/* .App button {
+  width: 30%;
+} */
+
+/* .todos {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.deleteBtn {
+  margin-left: 10px;
+} */
